@@ -1,0 +1,84 @@
+:root {
+  --bg: #000; /* solid black */
+  --text: #fff; /* white text */
+  --muted: #bbb;
+  font-family: system-ui, sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--bg);
+  color: var(--text);
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* top bar */
+#topbar {
+  display: flex;
+  gap: 16px;
+  padding: 12px 20px;
+}
+#topbar button {
+  background: transparent;
+  border: none;
+  color: var(--text);
+  font-size: 14px;
+  cursor: pointer;
+}
+#topbar button:hover {
+  text-decoration: underline;
+}
+
+/* center content */
+#center {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 8px;
+}
+#clock {
+  font-size: 96px;
+  font-weight: bold;
+}
+#greeting {
+  font-size: 28px;
+}
+#username {
+  font-size: 24px;
+  font-weight: 600;
+}
+#goal {
+  font-size: 18px;
+  color: var(--muted);
+}
+
+/* bottom widgets */
+#widgets {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+.widget {
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 10px;
+  padding: 16px 24px;
+  min-width: 180px;
+  text-align: center;
+}
+.widget .title {
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+.widget .desc {
+  font-size: 14px;
+  color: var(--muted);
+}
