@@ -82,6 +82,8 @@ body {
   font-size: 14px;
   color: var(--muted);
 }
+
+/* toggle button */
 #toggleSettings {
   position: fixed;
   bottom: 20px;
@@ -96,6 +98,7 @@ body {
   cursor: pointer;
 }
 
+/* settings panel */
 #settingsPanel {
   position: fixed;
   top: 0;
@@ -122,4 +125,5 @@ body {
   margin-top: 0;
   font-size: 18px;
 }
+
 
