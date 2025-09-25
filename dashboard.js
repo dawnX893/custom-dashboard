@@ -14,3 +14,10 @@ function updateClock() {
 
 setInterval(updateClock, 1000);
 updateClock();
+// Settings toggle
+const toggleBtn = document.getElementById("toggleSettings");
+const settingsPanel = document.getElementById("settingsPanel");
+
+toggleBtn.addEventListener("click", () => {
+  settingsPanel.classList.toggle("show");
+});
