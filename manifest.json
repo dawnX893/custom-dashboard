@@ -1,0 +1,9 @@
+{
+  "manifest_version": 3,
+  "name": "Custom Dashboard",
+  "version": "1.0",
+  "description": "Simple black dashboard with clock and widgets.",
+  "chrome_url_overrides": {
+    "newtab": "dashboard.html"
+  }
+}
